@@ -1,0 +1,126 @@
+// colors
+$violet: hsl(257, 40%, 49%);
+$violet-shadow: hsl(257, 30%, 35%);
+$magenta: hsl(300, 69%, 71%);
+
+// fonts
+$ff-h: 'Poppins', sans-serif;
+$ff-b: 'Open Sans', sans-serif;
+$fw-regular: 400;
+$fw-semi-bold: 600;
+
+// backgrounds
+$bg: "/images/bg-desktop.svg";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url($bg) no-repeat $violet;
+    background-size: contain;
+    min-height: 100vh;
+    color: white;
+    
+}
+
+header {
+    padding: 80px calc(25% / 3);
+    height: 50px;
+
+    img {
+        height: 100%;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+
+    .image {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    section {
+        width: 30%;
+        margin-top: 50px;
+
+        h1 {
+            font-family: $ff-h;
+            font-weight: $fw-semi-bold;
+            font-size: 35px;
+        }
+
+        p {
+            font-family: $ff-b;
+            font-size: 20px;
+            margin-top: 25px;
+            width: 100%;
+        }
+
+        button {
+            background: white;
+            border: none;
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 25px;
+            box-shadow: 0 0 10px $violet-shadow;
+            color: $violet;
+            font-size: 15px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: $magenta;
+            color: white;
+            font-weight: $fw-semi-bold;
+            transition: 0.2s;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    // justify-content: space-around;
+
+    .attribution {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        width: 80%;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+
+    .social {
+        width: 10%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .media {
+            border: 2px solid white;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .media:hover {
+            color: $magenta;
+            border: 2px solid $magenta;
+        }
+    } 
+}

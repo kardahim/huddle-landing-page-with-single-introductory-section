@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/images/bg-desktop.svg") no-repeat #674baf;
+  background-size: contain;
+  min-height: 100vh;
+  color: white;
+}
+
+header {
+  padding: 80px calc(25% / 3);
+  height: 50px;
+}
+
+header img {
+  height: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .image {
+  width: 45%;
+}
+
+main .image img {
+  width: 100%;
+}
+
+main section {
+  width: 30%;
+  margin-top: 50px;
+}
+
+main section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+main section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+main section button {
+  background: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0 0 10px #4e3e74;
+          box-shadow: 0 0 10px #4e3e74;
+  color: #674baf;
+  font-size: 15px;
+}
+
+main section button:hover {
+  cursor: pointer;
+  background: #e882e8;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .attribution {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
+footer .social {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .social .media {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .social .media:hover {
+  color: #e882e8;
+  border: 2px solid #e882e8;
+}
+/*# sourceMappingURL=style.css.map */
