@@ -104,8 +104,15 @@ main section {
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 1200px) {
+  main section {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   main section {
+    margin-top: 50px;
     width: 80%;
     text-align: center;
   }
@@ -186,16 +193,19 @@ footer .attribution {
   text-align: center;
   margin-top: 20px;
   width: 70%;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
   footer .attribution {
     width: 100%;
+    font-size: 17px;
   }
 }
 
 footer .attribution a {
-  color: #3e52a3;
+  color: #e882e8;
+  text-shadow: black 1px 1px;
 }
 
 footer .social {
@@ -210,7 +220,7 @@ footer .social {
 
 @media only screen and (max-width: 768px) {
   footer .social {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
   }
 }

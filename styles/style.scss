@@ -64,7 +64,6 @@ main {
     @include mobile {
         flex-direction: column;
         align-items: center;
-        // background: url($bg-m) no-repeat;
     }
 
     .image {
@@ -106,7 +105,12 @@ main {
         width: 30%;
         margin-top: 50px;
 
+        @include laptop {
+            margin-top: 0;
+        }
+
         @include mobile {
+            margin-top: 50px;
             width: 80%;
             text-align: center;
         }
@@ -172,14 +176,17 @@ footer {
         text-align: center;
         margin-top: 20px;
         width: 70%;
+        font-family: $ff-b;
 
 
         @include mobile {
             width: 100%;
+            font-size: 17px;
         }
 
         a {
-            color: hsl(228, 45%, 44%);
+            color: $magenta;
+            text-shadow: black 1px 1px;
         }
     }
 
@@ -189,7 +196,7 @@ footer {
         justify-content: center;
 
         @include mobile {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             width: 100%;
         }
 
